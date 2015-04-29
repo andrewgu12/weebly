@@ -8,13 +8,13 @@
 7 info start weebly-site@0.0.0
 8 verbose unsafe-perm in lifecycle true
 9 info weebly-site@0.0.0 Failed to exec start script
-10 error weebly-site@0.0.0 start: `node ./bin/www`
-10 error Exit status 8
+10 error weebly-site@0.0.0 start: `nodemon ./bin/www`
+10 error Exit status 127
 11 error Failed at the weebly-site@0.0.0 start script.
 11 error This is most likely a problem with the weebly-site package,
 11 error not with npm itself.
 11 error Tell the author that this fails on your system:
-11 error     node ./bin/www
+11 error     nodemon ./bin/www
 11 error You can get their info via:
 11 error     npm owner ls weebly-site
 11 error There is likely additional logging output above.
