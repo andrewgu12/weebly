@@ -1,0 +1,34 @@
+div(id="templateHeader",class="blueHeader")
+	h2 TEMPLATES
+div(id="templates",class="sideBarContent")
+	div(class="buttonLink",id="page1")
+		| PAGE
+		i(class="fa fa-times deletePage")
+		i(class="fa fa-pencil editPage")
+	div(id="addPageBox")		
+		input(type="text",id="addPage",placeholder="ADD NEW PAGE")
+		<i class="fa fa-plus addPagePlus"></i>
+		//- label(for="addPage",id="addPageLabel") +
+div(id="elementsHeader",class="blueHeader")
+	h2 ELEMENTS
+div(id="pageElements",class="sideBarContent")
+	div(class="row")
+		div(class="rowBox left")
+			div(id="title" class="dragItem")
+			p TITLE
+		div(class="rowBox")
+			div(id="text" class="dragItem")
+			p TEXT
+	div(class="row")
+		div(class="rowBox left")
+			div(id="image" class="dragItem")
+			p IMAGE
+		div(class="rowBox")
+			div(id="nav" class="dragItem")
+			p NAV
+div(id="settingsHeader",class="blueHeader")
+	h2 SETTINGS
+div(id="settings",class="sideBarContent")
+	//- p SITE GRID
+	//- div(id="switch")
+	//- 	input(type="checkbox",id="sliderCheckBox")

@@ -1,0 +1,26 @@
+doctype html
+html
+	head
+		title Weebly Admin Editor
+		link(rel="stylesheet",href="/stylesheets/admin_styles.css")
+	body
+		div(id="wrapper")
+			div(id="header")
+				div(id="logo",class="left")
+					a(href="/admin/editor")
+						img(src="/images/weebly_logo_orange.png")
+				div(id="api_token", class="right")
+					p API Key: 
+						span(id="span_number")= user.google.token
+			div(id="sidebar")
+				- if (pages != [""])
+					each page in pages
+						- if (page != "undefined")
+							div(id="#{page.replace(/\s/g, '')}",class="tab")
+								a(href="/admin/editor/#{page.replace(/\s/g, '')}")= page
+				div(id="addPageButton")
+					a(href="/admin/editor") + New Page
+			div(id="main_content")
+				block content
+		script(src='/javascripts/jquery.js')
+		script(src="/javascripts/admin_library.js")

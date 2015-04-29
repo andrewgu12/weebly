@@ -1,0 +1,16 @@
+doctype html
+html
+	head
+		title= title
+		link(rel='stylesheet', href='/stylesheets/style.css')
+	body
+		div(id="wrapper")
+			div(id="header")
+				img(src="/images/Weebly-Logo.png")
+			div(id="sidebar")
+				include sidebar.jade
+			div(id="main_content" class="sortable")
+				block content
+		script(src='/javascripts/jquery.js')
+		script(src='/javascripts/jquery-ui.min.js')
+		script(src='/javascripts/library.js')

@@ -1,0 +1,48 @@
+$.ajax ({
+	url: '/admin/api/pages',
+	type: 'GET',
+	success: function(data) {
+		console.log(data);
+	}
+});
+
+$.ajax ({
+	url: '/admin/api/pages/5387',
+	type: 'GET',
+	success: function(data) {
+		console.log(data);
+	}
+});
+
+
+$.ajax ({
+	url: '/admin/api/pages/',
+	type: 'POST',
+	data: {
+		"title":"Post1", 
+		"content":"Content1"
+	},
+	success: function(data) {
+		console.log(data);
+	}
+});
+
+$.ajax ({
+	url: '/admin/api/pages/5387',
+	type: 'PUT',
+	data: {
+		"title":"Updated",
+		"content":"Post"
+	},
+	success: function(data) {
+		console.log(data);
+	}
+});
+
+$.ajax ({
+	url: '/admin/api/pages/5395',
+	type: 'DELETE',
+	success: function(data) {
+		console.log(data);
+	}
+});

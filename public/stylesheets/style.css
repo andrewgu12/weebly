@@ -1,0 +1,301 @@
+@import "reset.css";
+@import "font-awesome.min.css";
+@import "jquery-ui.min.css";
+@font-face {
+  font-family: 'ProximaNova';
+  font-style: normal;
+  font-weight: normal;
+  src: url("/fonts/ProximaNova-Reg.otf");
+}
+@font-face {
+  font-family: 'ProximaNova';
+  font-style: italic;
+  font-weight: normal;
+  src: url("/fonts/ProximaNova-RegIt.otf");
+}
+@font-face {
+  font-family: 'ProximaNova';
+  font-style: normal;
+  font-weight: oblique;
+  src: url("/fonts/ProximaNova-Light.otf");
+}
+@font-face {
+  font-family: 'ProximaNova';
+  font-style: italic;
+  font-weight: oblique;
+  src: url("/fonts/ProximaNova-LightIt.otf");
+}
+@font-face {
+  font-family: 'ProximaNova';
+  font-style: normal;
+  font-weight: bold;
+  src: url("/fonts/ProximaNova-Sbold.otf");
+}
+@font-face {
+  font-family: 'VAGRoundedStd';
+  font-style: normal;
+  font-weight: bold;
+  src: url("/fonts/VAGRoundedStd-Bold.otf");
+}
+@font-face {
+  font-family: 'VAGRoundedStd';
+  font-style: normal;
+  font-weight: oblique;
+  src: url("/fonts/VAGRoundedStd-Light.otf");
+}
+@font-face {
+  font-family: 'VAGRoundedStd';
+  font-style: normal;
+  font-weight: normal;
+  src: url("/fonts/VAGRoundedStd-Thin.otf");
+}
+html,
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: ProximaNova;
+}
+div#wrapper {
+  min-width: 1080px;
+  width: 100%;
+  min-height: 100%;
+  margin: 0 auto;
+  padding: 0;
+  position: relative;
+}
+div,
+a,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: ProximaNova;
+}
+div#header {
+  height: 50px;
+  background: #518dca;
+  line-height: 46px;
+  box-shadow: 0 2px 0px #000;
+}
+div#header img {
+  vertical-align: middle;
+  padding-left: 30px;
+}
+div#sidebar {
+  position: absolute;
+  left: 0;
+  width: 220px;
+  min-height: 100%;
+  background: #2a3c4d;
+  box-shadow: 0 -2px 0px #000;
+  margin-top: 2px;
+}
+div.blueHeader {
+  height: 30px;
+  background: #4f657b;
+  text-align: center;
+  line-height: 30px;
+  box-shadow: 0 2px 0px #000;
+}
+div.blueHeader h2 {
+  font-size: 13px;
+  color: #9cb3ca;
+  font-weight: bold;
+}
+div.sideBarContent {
+  height: 100%;
+  min-height: 110px;
+}
+div.row {
+  height: 110px;
+  border-bottom: 2px solid #21313f;
+  position: relative;
+  clear: both;
+}
+div.row div.left {
+  width: 106px;
+}
+div.rowBox {
+  width: 110px;
+  height: 110px;
+  float: left;
+  border-right: 2px solid #21313f;
+  text-align: center;
+}
+p {
+  font-size: 13px;
+  color: #5e768e;
+  margin-top: 5px;
+  font-weight: bold;
+}
+div.dragItem {
+  width: 55px;
+  height: 60px;
+  margin: 0 auto;
+  margin-top: 15px;
+}
+div#title {
+  background-image: url("../images/Element-Icons.png");
+  background-position: -8px -5px;
+}
+div#text {
+  background-image: url("../images/Element-Icons.png");
+  background-position: -526px -5px;
+}
+div#image {
+  background-image: url("../images/Element-Icons.png");
+  background-position: -1044px -5px;
+}
+div#nav {
+  background-image: url("../images/Element-Icons.png");
+  background-position: -1562px -5px;
+}
+div#settings {
+  height: 50px;
+  line-height: 50px;
+  border-bottom: 2px solid #21313f;
+}
+input#addPage,
+input.editPageBox {
+  background-color: #2a3c4d;
+  border: 3px solid #4f657b;
+  border-radius: 4px;
+  height: 30px;
+  padding-left: 5px;
+  color: #fff;
+  margin-left: 30px;
+  margin-top: 10px;
+  margin-bottom: 30px;
+  width: 149px;
+}
+input.editPageBox {
+  margin-bottom: 0;
+}
+div#addPageBox i {
+  color: #fff;
+  opacity: 0.2;
+}
+div.buttonLink {
+  width: 149px;
+  height: 30px;
+  margin-left: 30px;
+  margin-top: 10px;
+  background: #518dca;
+  color: #fff;
+  padding-left: 10px;
+  font-size: 13px;
+  font-weight: bold;
+  line-height: 30px;
+  border-radius: 4px;
+  box-shadow: 1px 1px 0 #000;
+}
+div.buttonLink:hover {
+  background: #4f657b;
+}
+div.buttonLink i {
+  float: right;
+  padding-top: 8px;
+  padding-right: 10px;
+  opacity: 0;
+}
+i.addPagePlus,
+i.editPagePencil {
+  margin-left: -25px;
+}
+div#main_content {
+  margin-left: 220px;
+  padding-left: 55px;
+  padding-top: 35px;
+  margin-right: 55px;
+}
+div.pageButton {
+  display: inline-block;
+  float: left;
+  width: 120px;
+  height: 40px;
+  background: #fff;
+  margin-right: 10px;
+  border-radius: 10px;
+  border: 2px solid #97aabc;
+  line-height: 40px;
+}
+div.pageButton p {
+  font-size: 14px;
+  color: #97aabc;
+  text-align: center;
+  margin-top: 0;
+  font-weight: bold;
+  font-style: normal;
+}
+div.active {
+  background: #97aabc;
+}
+div.active p {
+  color: #fff;
+}
+div#mainImage {
+  margin-top: 50px;
+  border: 2px solid #97aabc;
+  border-radius: 10px;
+  min-width: 820px;
+  width: 100%;
+  height: 290px;
+  margin-top: 100px;
+  background: #eff2f5;
+  position: relative;
+}
+div#mainImage div#placeHolder {
+  bottom: 0;
+  left: 0;
+  right: 0;
+  top: 0;
+  width: 140px;
+  height: 140px;
+  margin: auto;
+  position: absolute;
+  text-align: center;
+}
+div#mainImage div#placeHolder p {
+  font-size: 12.45px;
+  color: #c0ccd8;
+  margin-top: 0;
+}
+div#mainWords {
+  margin-top: 70px;
+}
+div#mainWords h1 {
+  font-size: 30px;
+  color: #4f657b;
+  font-weight: bold;
+}
+div#mainWords p {
+  color: #4f657b;
+  font-size: 14px;
+  font-weight: normal;
+  font-style: normal;
+}
+div#mainWords textarea {
+  min-width: 100%;
+  min-height: 100px;
+  resize: vertical;
+}
+div.elementBlock {
+  background: #97aabc;
+  border-radius: 10px;
+  text-align: center;
+  height: 60px;
+  line-height: 60px;
+  margin-bottom: 15px;
+}
+textarea#textBlock {
+  border: 2px solid #97aabc;
+  border-radius: 10px;
+  min-width: 100%;
+  resize: vertical;
+  margin-bottom: 15px;
+}

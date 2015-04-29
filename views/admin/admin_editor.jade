@@ -1,0 +1,16 @@
+extends admin_layout
+
+block content
+	form(id="newPage",action="/admin/editor",method="post")
+		input(type="text",id="title",placeholder="Title",name='title')
+		textarea(id="content",placeholder="Body",name='pageContent')
+		p(id="link")
+			span(class="left", id="link")
+				| Permalink: 
+				a(href="#") www.yourdomain.com/title
+			span(class="right",id="date")
+				| Updated: Oct 10, 2013  4:23pm
+		div(class="buttonsRow")
+			a(href="/admin/editor", id="",class="button deleteButton") Delete
+			input(type="submit",id="save",class="button", value="Save")
+			//- a(href="/admin/editor", id="save", class="button") Save

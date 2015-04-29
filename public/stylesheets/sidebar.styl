@@ -1,0 +1,125 @@
+// Styles for the sidebar
+@import "colors"
+
+// position the sidebar to the left of the page
+div#sidebar 
+	position: absolute
+	left: 0
+	width: (sideBarContentWidth)px
+	min-height: 100%
+	background:sidebar_main
+	box-shadow: 0 -2px 0px shadowBoxColor
+	margin-top: 2px
+
+// titlebar (header for each section)
+div.blueHeader 
+	height: 30px
+	background: blueHeaderBg
+	text-align: center
+	line-height: 30px
+	box-shadow: 0 2px 0px shadowBoxColor 
+div.blueHeader h2
+	font-size: 13px
+	color: sideBarHeaderText
+	font-weight: bold
+
+// stuff within each of the sections under the titlebar
+div.sideBarContent
+	height: 100%
+	min-height: (sideBarContentHeight/2)px
+// Create the rows for the drag items
+div.row 
+	height: (sideBarContentHeight/2)px
+	border-bottom: 2px solid sideBarShadow
+	position: relative
+	clear: both
+// item on the left, specify width
+div.row div.left 
+	width: 106px
+// individual items
+div.rowBox
+	width: (sideBarContentWidth/2)px
+	height: (sideBarContentHeight/2)px
+	float: left
+	border-right:  2px solid sideBarShadow
+	text-align: center
+p 
+	font-size: 13px
+	color: sideBarTextColor
+	margin-top: 5px
+	font-weight: bold
+	
+// the image to drag
+div.dragItem
+	width: 55px
+	height: 60px
+	margin: 0 auto
+	margin-top: 15px
+div#title
+	background-image: url(../images/Element-Icons.png)
+	background-position: -8px -5px
+div#text 
+	background-image: url(../images/Element-Icons.png)
+	background-position: -526px -5px
+div#image
+	background-image: url(../images/Element-Icons.png)
+	background-position: -1044px -5px
+div#nav
+	background-image: url(../images/Element-Icons.png)
+	background-position: -1562px -5px
+
+
+// The settings section (incomplete, need to figure out how to do toggle button)
+div#settings
+	height: (settingsHeight)px
+	line-height: (settingsHeight)px
+	border-bottom: 2px solid sideBarShadow
+
+// This code is never used b/c couldn't figure out toggle button
+// div#settings p
+// 	width: (sideBarContentWidth/2)px
+// 	padding-left: (leftAdjustedMargin)px
+// div#switch
+// 	width: (sideBarContentWidth/2)
+
+// The code for the page divs and for the text box to add/edit pages
+input#addPage, input.editPageBox
+	background-color: sidebar_main
+	border: 3px solid #4f657b
+	border-radius: 4px
+	height: 30px
+	padding-left: 5px
+	color: #fff
+	margin-left: 30px
+	margin-top:10px
+	margin-bottom: 30px
+	width: 149px
+input.editPageBox
+	margin-bottom: 0
+// specify the opacity and color for each of the icons
+div#addPageBox i
+	color: #FFFFFF
+	opacity: 0.2
+// The indivPage divs
+div.buttonLink
+	width: 149px
+	height: 30px
+	margin-left: 30px
+	margin-top: 10px
+	background: #518dca
+	color: #FFFFFF
+	padding-left: 10px
+	font-size: 13px
+	font-weight: bold
+	line-height: 30px
+	border-radius: 4px
+	box-shadow: 1px 1px 0 shadowBoxColor
+div.buttonLink:hover
+	background: #4f657b
+div.buttonLink i
+	float: right
+	padding-top: 8px
+	padding-right: 10px
+	opacity: 0
+i.addPagePlus, i.editPagePencil
+	margin-left: -25px

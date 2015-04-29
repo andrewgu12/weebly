@@ -1,0 +1,108 @@
+@import "reset.css";
+@import "font-awesome.min.css";
+@font-face {
+  font-family: 'ProximaNova';
+  font-style: normal;
+  font-weight: normal;
+  src: url("/fonts/ProximaNova-Reg.otf");
+}
+@font-face {
+  font-family: 'ProximaNova';
+  font-style: italic;
+  font-weight: normal;
+  src: url("/fonts/ProximaNova-RegIt.otf");
+}
+@font-face {
+  font-family: 'ProximaNova';
+  font-style: normal;
+  font-weight: oblique;
+  src: url("/fonts/ProximaNova-Light.otf");
+}
+@font-face {
+  font-family: 'ProximaNova';
+  font-style: italic;
+  font-weight: oblique;
+  src: url("/fonts/ProximaNova-LightIt.otf");
+}
+@font-face {
+  font-family: 'ProximaNova';
+  font-style: normal;
+  font-weight: bold;
+  src: url("/fonts/ProximaNova-Sbold.otf");
+}
+@font-face {
+  font-family: 'VAGRoundedStd';
+  font-style: normal;
+  font-weight: bold;
+  src: url("/fonts/VAGRoundedStd-Bold.otf");
+}
+@font-face {
+  font-family: 'VAGRoundedStd';
+  font-style: normal;
+  font-weight: oblique;
+  src: url("/fonts/VAGRoundedStd-Light.otf");
+}
+@font-face {
+  font-family: 'VAGRoundedStd';
+  font-style: normal;
+  font-weight: normal;
+  src: url("/fonts/VAGRoundedStd-Thin.otf");
+}
+body,
+html {
+  height: 100%;
+  width: 100%;
+  font-family: 'ProximaNova';
+}
+div#wrapper {
+  min-width: 100%;
+  min-height: 100%;
+  background: #005892 no-repeat center center fixed;
+}
+div#weebly_logo {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  top: 0;
+  margin: auto;
+  width: 445px;
+  height: 173px;
+}
+div#login {
+  width: 280px;
+  height: 50px;
+  background: #dd4c39;
+  margin: 0 auto;
+  margin-top: 30px;
+  border-radius: 5px;
+  box-shadow: 0 1px 1px #000;
+  line-height: 50px;
+  color: #fff;
+}
+div#googleLogo {
+  height: 50px;
+  width: 50px;
+  border-right: 1px solid #bc4131;
+  float: left;
+}
+div#googleLogo i {
+  padding-left: 10px;
+  padding-top: 10px;
+}
+div#login p {
+  width: 230px;
+  font-size: 20px;
+  padding-left: 80px;
+  font-weight: normal;
+}
+div#login p a:hover {
+  border-bottom: 1px solid #fff;
+}
+div#login p a:visited {
+  color: #fff;
+  text-decoration: none;
+}
+div#login p a {
+  text-decoration: none;
+}
