@@ -26,6 +26,8 @@ router.get '/pages', isLoggedIn, (req, res) ->
 	res.render 'api/pages.jade'
 
 
+
+
 # router.get '/auth/google', passport.authenticate('google', {scope:['profile', 'email']})
 
 # router.get '/auth/google/callback', passport.authenticate('google', {successRedirect: '/api/pages', failureRedirect: '/api'})
